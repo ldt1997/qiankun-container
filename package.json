@@ -1,0 +1,46 @@
+{
+  "name": "qiankun-container",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "umi dev",
+    "build": "umi build && npm run pack",
+    "eslint": "eslint --fix --ext .js --ext .jsx --ext .ts --ext .tsx ./src",
+    "lint-staged": "lint-staged",
+    "pack": "node scripts/pack.js"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "pre-commit": [
+    "lint-staged"
+  ],
+  "dependencies": {
+    "@ali-whale/class-prefix": "^0.7.24",
+    "@ali-whale/fetch-web": "^0.7.27",
+    "@ali-whale/hooks": "^0.7.42",
+    "@ali-whale/theme": "^0.7.24",
+    "@ali-whale/umirc-dva": "^0.7.41",
+    "@ali-whale/utils": "^0.7.24",
+    "antd": "^3.26.14",
+    "classnames": "^2.2.6",
+    "dva": "^2.4.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-perfect-scrollbar": "^1.5.8",
+    "react-router-dom": "^5.2.0",
+    "umi": "^2.13.13",
+    "umi-plugin-react": "^1.15.8"
+  },
+  "devDependencies": {
+    "@ali-whale/eslint-config": "^0.7.35",
+    "babel-eslint": "^10.1.0",
+    "cross-env": "^5.2.1",
+    "lint-staged": "^8.2.1",
+    "pre-commit": "^1.2.2",
+    "tar": "^4.4.8"
+  }
+}

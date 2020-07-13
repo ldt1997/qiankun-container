@@ -1,0 +1,27 @@
+@prefix: base-layout;
+
+:global{
+  .@{prefix} {
+    &- {
+      &root {
+        height: 100vh;
+
+        .ant-menu-inline-collapsed {
+          width: 50px;
+        }
+
+        .ant-menu-inline-collapsed > .ant-menu-item, .ant-menu-inline-collapsed > .ant-menu-item-group > .ant-menu-item-group-list > .ant-menu-item, .ant-menu-inline-collapsed > .ant-menu-item-group > .ant-menu-item-group-list > .ant-menu-submenu > .ant-menu-submenu-title, .ant-menu-inline-collapsed > .ant-menu-submenu > .ant-menu-submenu-title {
+          padding: 0 17px !important;
+        }
+      }
+
+      &header {
+        height: 48px;
+        line-height: 48px;
+        background-color: #262931;
+        color: white;
+        padding: 0 16px;
+      }
+    }
+  }
+}

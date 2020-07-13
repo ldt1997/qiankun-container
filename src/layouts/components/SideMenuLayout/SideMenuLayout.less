@@ -1,0 +1,84 @@
+@prefix: side-menu-layout;
+
+:global{
+  .@{prefix} {
+    &- {
+      &content {
+        position: relative;
+        height: 100%;
+        overflow: auto;
+        padding: 10px;
+        background-color: #FFFFFF;
+
+        h1 {
+          font-size: 2em;
+        }
+
+
+        table {
+          border: 1px solid #DDDDDD;
+          border-collapse: collapse;
+          //text-align: center;
+          font-size: 12px;
+
+          code {
+            background-color: rgba(100, 0, 0, 0.1);
+            border-radius: 4px;
+            padding: 1px 5px;
+            margin: 0 2px;
+          }
+        }
+
+        table td, table th {
+          border: 1px solid #DDDDDD;
+          border-width: 0 0 1px 0;
+          color: #666;
+          height: 30px;
+          padding: 12px;
+        }
+
+        table thead th {
+          color: #5c6b77;
+          font-weight: 500;
+          white-space: nowrap;
+          background: rgba(0, 0, 0, 0.02);
+          padding-top: 14px;
+          width: 100px;
+        }
+
+        //table tr:nth-child(odd) {
+        //  background: #fff;
+        //}
+        //
+        //table tr:nth-child(even) {
+        //  background: #F5FAFA;
+        //}
+
+        table tbody tr {
+          background-color: transparent;
+          transition: background-color 300ms;
+
+          td:nth-child(1) {
+            font-weight: bold;
+          }
+
+          &:hover {
+            background-color: #f7f9f9;
+          }
+        }
+
+
+        .cbd-button {
+          margin-bottom: 10px;
+          margin-right: 10px;
+        }
+      }
+
+      &side-menu {
+        flex: 1;
+        overflow: hidden;
+        position: relative;
+      }
+    }
+  }
+}

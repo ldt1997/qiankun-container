@@ -1,0 +1,69 @@
+@prefix: top-menu;
+
+:global{
+  .@{prefix} {
+
+    &.ant-menu-dark.ant-menu-horizontal > .ant-menu-item,
+    &.ant-menu-dark.ant-menu-horizontal .ant-menu-submenu-title {
+      border-bottom: 2px solid transparent;
+      background-color: transparent;
+
+      &.ant-menu-item-selected {
+        /* 选中效果 */
+        border-bottom-color: @ali-whale-primary-color;
+      }
+    }
+
+    &-popup {
+      &.ant-menu-dark .ant-menu-sub {
+        background-color: #1A1F23;
+      }
+
+      .ant-menu-item {
+        font-size: 12px;
+
+        &:not(.ant-menu-item-selected):hover {
+          background-color: #101418;
+        }
+      }
+    }
+
+    &.ant-menu-dark,
+    &.ant-menu-dark .ant-menu-sub {
+      background-color: #262931;
+    }
+
+    .ant-menu-item,
+    .ant-menu-submenu-title {
+      font-size: 12px;
+    }
+
+    &.ant-menu-dark {
+      .ant-menu-submenu-title:hover,
+      .ant-menu-item:not(.ant-menu-item-selected):hover,
+      .ant-menu-submenu-active {
+        color: #FFFFFF !important;
+
+        .anticon {
+          color: #FFFFFF;
+        }
+      }
+    }
+
+
+    .ant-menu-item:not(:last-child),
+    .ant-menu-item {
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+
+    &.ant-menu-dark .ant-menu-item-selected, .ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected {
+    }
+
+    &- {
+      &root {
+        font-size: 12px;
+      }
+    }
+  }
+}

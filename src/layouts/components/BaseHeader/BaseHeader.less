@@ -1,0 +1,55 @@
+@prefix: cbd-header;
+
+:global {
+  .@{prefix} {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+
+    > div {
+      height: 100%;
+      line-height: 46px;
+    }
+
+    &- {
+      &logo {
+        margin-right: 10px;
+      }
+
+      &title {
+        white-space: nowrap;
+        font-size: 20px;
+        color: #FFFFFF;
+      }
+
+      &menu {
+        flex: 1;
+      }
+
+      &item {
+        height: 100%;
+        line-height: 46px;
+      }
+
+      &search-content {
+        padding: 0 12px;
+      }
+
+      &text-link {
+        background-color: rgba(0, 0, 0, 0);
+        color: rgba(255, 255, 255, 0.45);
+        padding: 0 12px;
+        font-size: 12px;
+        cursor: pointer;
+        transition: color 300ms, background-color 300ms;
+
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.2);
+          color: rgba(255, 255, 255, 0.8);
+        }
+      }
+
+    }
+  }
+}

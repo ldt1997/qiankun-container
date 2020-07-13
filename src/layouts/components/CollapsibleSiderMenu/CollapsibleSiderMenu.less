@@ -1,0 +1,45 @@
+@prefix: collapsible-sider-menu;
+
+:global{
+  .@{prefix} {
+    &- {
+      &root {
+        position: relative;
+        background-color: #262931;
+        overflow-y: hidden;
+
+        .ant-layout-sider-children {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+
+
+      &collapse-button {
+        text-align: center;
+        color: #B7B8BD;
+        height: 28px;
+        line-height: 26px;
+        border-top: 1px solid rgba(255, 255, 255, 0.10);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+        cursor: pointer;
+        transition: color 300ms, background-color 300ms, transform 300ms;
+        background-color: rgba(255, 255, 255, 0);
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.05);
+          color: #FFFFFF;
+        }
+
+        i {
+          transition: transform 300ms;
+          transform: rotate(0deg);
+        }
+      }
+
+      &collapsed i {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+}

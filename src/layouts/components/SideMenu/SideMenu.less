@@ -1,0 +1,73 @@
+@prefix: side-menu;
+
+:global{
+  .@{prefix} {
+
+    &.ant-menu-dark {
+      background-color: #262931;
+    }
+
+    &.ant-menu-dark .ant-menu-sub {
+      background-color: #1A1F23;
+
+      .ant-menu-item {
+        &:not(.ant-menu-item-selected):hover {
+          background-color: #101418;
+        }
+      }
+    }
+
+    &-popup {
+      &.ant-menu-dark .ant-menu-sub {
+        background-color: #1A1F23;
+      }
+
+      .ant-menu-item {
+        font-size: 12px;
+
+        &:not(.ant-menu-item-selected):hover {
+          background-color: #101418;
+        }
+      }
+    }
+
+
+    .ant-menu-item,
+    .ant-menu-submenu-title {
+      font-size: 12px;
+
+      &:hover {
+        background-color: #1A1F23;
+      }
+    }
+
+    &.ant-menu-dark {
+      .ant-menu-submenu-title:hover,
+      > .ant-menu-item:not(.ant-menu-item-selected):hover {
+        color: #0091FF;
+
+        .anticon {
+          color: #FFFFFF;
+        }
+      }
+
+    }
+
+
+    .ant-menu-item:not(:last-child),
+    .ant-menu-item {
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+
+    &.ant-menu-dark .ant-menu-item-selected, .ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected {
+      background-color: @ali-whale-primary-color;
+    }
+
+    &- {
+      &root {
+        font-size: 12px;
+      }
+    }
+  }
+}

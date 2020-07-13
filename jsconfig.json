@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "module":"commonJS",
+    "target": "es2015",
+    "experimentalDecorators": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"],
+      "components/*": ["src/components/*"],
+      "services/*": ["src/services/*"],
+      "layouts/*": ["src/layouts/*"],
+      "utils/*": ["src/utils/*"],
+      "assets/*": ["src/assets/*"],
+      "themes/*": ["src/themes/*"],
+      "config/*": ["src/config/*"],
+      "public/*": ["src/public/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist"]
+}
