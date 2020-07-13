@@ -2,7 +2,9 @@ const umircConfig = require("@ali-whale/umirc-dva");
 
 const umircExport = {
   ...umircConfig,
-  publicPath: "/",
+  // publicPath: "/",
+  mountElementId: "root-master",
+  hash: false,
   targets: { ie: 11 },
   proxy: {
     // 需要转发的API前缀
