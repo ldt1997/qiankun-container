@@ -1,17 +1,17 @@
 export default [
   {
-    key: '/home',
-    icon: 'home',
-    text: '首页',
+    key: "/home",
+    icon: "home",
+    text: "首页",
   },
   {
-    key: '/sub',
-    icon: 'tool',
-    text: '子页面',
+    key: "/app1",
+    icon: "tool",
+    text: "子应用1",
   },
   {
-    key: '/demo',
-    icon: 'table',
-    text: 'Demo',
+    key: "/app2",
+    icon: "tool",
+    text: "子应用2",
   },
 ];
