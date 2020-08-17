@@ -25,6 +25,7 @@
     "@ali-whale/theme": "^0.7.24",
     "@ali-whale/umirc-dva": "^0.7.41",
     "@ali-whale/utils": "^0.7.24",
+    "@umijs/plugin-qiankun": "^1.5.5",
     "antd": "^3.26.14",
     "classnames": "^2.2.6",
     "dva": "^2.4.1",
